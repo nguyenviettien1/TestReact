@@ -30,7 +30,7 @@ class ShowApp extends React.Component{
             </div>
             <div className="col-xs-12 col-sm-6 col-md-4">
               <i className="fab fa-bootstrap" />
-              <h3>Bootstrap</h3>
+              <h3>BOOTSTRAP</h3>
               <p>Build your Website and Front-end Application</p>
             </div>
             <div className="col-sm-12 col-md-4">
