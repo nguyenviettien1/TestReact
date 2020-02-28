@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Collapse,
   Navbar,
@@ -17,28 +17,18 @@ import {
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-class Header extends React.Component{
-  constructor(props) {
-    super(props)
-    this.state = {
-      isOpen : false
-    }
-    this.toggle = this.toggle.bind(this)
-  }
-  toggle = () => {
-    this.setState({
-      isOpen : !this.state.isOpen
-  });
-  }
-  render(){
+const Header = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
 
   return (
       <Router>
         <div>
       <Navbar color="dark" dark expand="md">
-        <NavbarBrand className="set-color">WEBTEST</NavbarBrand>
-        <NavbarToggler onClick={this.toggle} />
-        <Collapse isOpen={this.isOpen} navbar>
+        <NavbarBrand className="set-color" >WEBTEST</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
               <NavLink href="/trangchu">Trang chủ</NavLink>
@@ -79,6 +69,5 @@ class Header extends React.Component{
       </Router>
     
   );
-  }
 };
 export default Header;

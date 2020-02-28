@@ -23,6 +23,9 @@ class App extends React.Component{
       <hr className="my-1" />
       <Router>
       <Switch>
+          <Route exact={true} path="/">
+            <Trangchu />
+          </Route>
           <Route path="/gioithieu">
             <Gioithieu></Gioithieu>
           </Route>
