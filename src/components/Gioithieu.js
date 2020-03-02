@@ -22,7 +22,7 @@ class Gioithieu extends React.Component {
               four programs; three from your chosen certificate track and one
               completed in-person.
             </h4>
-           <h4>
+           <h4 className="mb-180">
               The overall quality of the program was exceptional. I especially
               enjoyed the supplementary materials provided at the end of each
               module. The videos were easy to understand and well laid out. I
