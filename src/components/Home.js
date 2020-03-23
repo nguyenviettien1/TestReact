@@ -347,7 +347,7 @@ class Home extends React.Component {
                     if(this.state.type === "create")
                       this.handleSaveModal()
                     else
-                      this.handleSaveModalEdit(this.state.subject_edit_id)
+                      this.handleSaveModalEdit(this.state.content_edit_id)
                 }}>Lưu
                 </button>
               </ModalFooter>

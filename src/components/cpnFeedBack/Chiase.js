@@ -8,7 +8,7 @@ class Chiase extends React.Component {
           <div className="panel panel-default">
             <div
               className="panel-heading"
-              style={{ backgroundColor: "#337AB7", color: "white" }}
+              style={{ backgroundColor: "#189eff", color: "white" }}
             >
               <h2 style={{ marginTop: "0px", marginBottom: "0px" }}>
                 Chia sẻ
